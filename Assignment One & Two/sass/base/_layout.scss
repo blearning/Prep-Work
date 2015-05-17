@@ -1,0 +1,97 @@
+//
+// Typography
+//
+
+// Header //
+header{
+	background:#2e2e2e;
+
+	#text-as-logo{
+		margin-top:0px;
+		margin-bottom:0px;
+		@include font-size($text-as-logo);
+		font-weight: $text-as-logo-weight;
+		color:#fff;
+	}
+
+}
+
+// Main Container //
+section.main-content{
+
+	ol{
+		margin-left:15px;
+	}
+	
+	// Ingredients //
+	
+	.ingredients li, .directions li{
+		padding-right:20px;
+		margin-bottom:10px;
+		list-style: decimal;
+	}
+
+	.ingredients li{
+
+		&:hover{
+			cursor: pointer;
+			text-decoration: line-through;
+		}
+
+		&.crossed-out{
+			text-decoration: line-through;
+			color:red;
+		}
+	}
+
+	// Directions //
+	.directions li{
+
+		&:hover{
+			cursor: pointer;
+			
+			&::after{
+				margin-left:10px;
+				content: '\2713';
+			}
+		}
+
+		&.checked-off{
+			color:green;
+			font-weight: 400;
+
+			&::after{
+				margin-left:10px;
+				content: '\2713';
+			}
+		}
+
+	}
+
+	// Ingredients Left && Directions Left //
+	.ingredients-left span, .directions-left span{
+		
+		font-size: 24px;
+		padding: 15px;
+		display: inline-block;
+		margin-top: 10px;
+		color:white;
+		line-height: 33px;
+
+			&.not-complete{
+				background:red;
+			}
+
+			&.complete{
+				background: #488704;
+			}
+	}
+
+}
+
+
+// Footer //
+footer{
+	background:#2e2e2e;
+	color:#fff;
+}

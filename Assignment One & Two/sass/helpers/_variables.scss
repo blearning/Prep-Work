@@ -1,0 +1,102 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Typography
+//
+
+//## Font, line-height, and color for body text, headings, and more.
+
+
+$font-family:  										"lato", Helvetica, Arial, sans-serif !default;
+
+
+/** Font Size **/
+
+$text-as-logo:										36;
+$text-as-logo-weight:								900;
+
+$font-size-h1:            							36;
+$font-size-h2:          							30;
+$font-size-h3:            							28;
+$font-size-h4:            							22;
+$font-size-h5:            							20;
+$font-size-h6:            							18;
+
+$font-mobile-size-h1:            					30;
+$font-mobile-size-h2:          						26;
+$font-mobile-size-h3:            					22;
+$font-mobile-size-h4:            					20;
+$font-mobile-size-h5:            					20;
+$font-mobile-size-h6:            					20;
+
+$header-font-weight: 								300;
+
+$font-size-body:									15;
+$font-size-body-weight:								200;
+$font-mobile-size-body:								15;
+
+
+//== Colors //
+//
+
+/** Brand colors **/
+$brand-primary:       								#f7751f;
+$brand-secondary:									#555;
+$brand-tertiary:									#3288e6;
+
+/** Text Color **/
+$text-color-header:									#555;
+$text-color-body:									#555;
+
+
+/** Link Colors **/
+$primary-link-color:								#555;
+$primary-link-color-hover:							#555;
+$primary-link-color-text-decoration:				underline;
+$primary-link-color-text-decoration-hover:			none;
+
+$secondary-link-color:								#000000;
+$secondary-link-color-hover:						#000000;
+$secondary-link-color-text-decoration:				underline;
+$secondary-link-color-text-decoration-hover:		none;
+
+//** Link hover decoration.
+$header-link-hover-decoration: 						none;
+$body-link-hover-decoration: 						underline;
+
+
+//== Footer //
+//
+$footer-font-family:								$font-family;
+$footer-font-size:	 								$font-size-body - 3;
+$footer-font-weight:	 							200;
+
+//== Spacers
+//
+
+$max-margin:										20; //increcents of 5, so 20 would be max of 100
+$max-padding:										20; //increcents of 5, so 20 would be max of 100
+
+/** Content Dividers **/
+$primary-content-horizontail-divider:				40px;
+$primary-content-horizontail-divider-tablet:		40px;
+$primary-content-horizontail-divider-mobile:		30px;
+
+$secondary-content-horizontail-divider:				40px;
+$secondary-content-horizontail-divider-tablet:		40px;
+$secondary-content-horizontail-divider-mobile:		30px;
+
+$tertiary-content-horizontail-divider:				30px;
+$tertiary-content-horizontail-divider-tablet:		30px;
+$tertiary-content-horizontail-divider-mobile:		20px;
+
+
+
+//== Layout, mobile width, changes font-size at snap
+$desktop-width:										960px;
+$tablet-width:										768px;
+$mobile-width:										768px;
+//
+

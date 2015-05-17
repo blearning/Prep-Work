@@ -1,0 +1,119 @@
+// Custom Responsive Layout // 
+	
+	.be-container {
+	    width:$desktop-width;
+	    margin: 0 auto;
+	    display:block;
+	}
+	
+	@media (max-width: $desktop-width) {
+	    .be-container {
+	        width:92%;
+	    }
+	}
+	
+	.col-container {
+	    width:100%;
+	    *zoom: 1;
+	    
+	    &:before, &:after {
+	        content:" ";
+	        display: table;
+	    }
+	    &:after {
+	        clear: both;
+	    }
+	
+	
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+		    float: left;
+		    margin-left:2%;
+		    margin-bottom:2%;
+		    
+		    img{
+		        width:100%;
+		        display: block;
+		        border:none;
+		    }
+		    
+		    &.no-margin{
+			    margin: 0px !important;
+		    }
+		    
+		    &:first-child{
+			    margin-left:0px;
+		    }
+		}
+	}
+	
+	// General Responsive Grid //
+	
+	.col-1 {
+    width: 6.50%
+	}
+	.col-2 {
+	width: 15%;
+	}
+	.col-3 {
+	width: 23.5%;
+	}
+	.col-4 {
+	width: 32%;
+	}
+	.col-5 {
+	width: 40.5%;
+	}
+	.col-6 {
+	    width: 49%;
+	}
+	.col-7 {
+	    width: 57.50%;
+	}
+	.col-8 {
+	    width: 66%;
+	}
+	.col-9 {
+	    width: 74.5%;
+	}
+	.col-10 {
+	    width: 83%;
+	}
+	.col-11 {
+	    width: 91.5%;
+	}
+	.col-12 {
+	    width: 100%;
+	}	
+	
+	@media (max-width: $desktop-width) {
+	    .desktop-full-width{
+	        float: left;
+	        display:block;
+	        width:100%;
+	        clear:both;
+	        margin-left:0px !important;
+	        margin-right:0px !important;
+	    }
+	}
+	
+	@media (max-width: $tablet-width) {
+	    .tablet-full-width{
+	        float: left;
+	        display:block;
+	        width:100%;
+	        clear:both;
+	        margin-left:0px !important;
+	        margin-right:0px !important;
+	    }
+	}
+	
+	@media (max-width: $mobile-width) {
+	    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+	        float: left;
+	        display:block;
+	        width:100%;
+	        clear:both;
+	        margin-left:0px !important;
+	        margin-right:0px !important;
+	    }
+	}

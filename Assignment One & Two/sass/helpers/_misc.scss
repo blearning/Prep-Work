@@ -1,0 +1,196 @@
+//
+// Spacers
+//
+// All scenarios for Margin, Padding, and Container Height
+//
+// --------------------------------------------------
+
+// Margin //
+/////////////////////////////////
+/////////////////////////////////
+
+	/** Margin Top **/
+	@for $i from 0 through $max-margin{
+	    $value: $i*5;
+	    .margin-top-#{$value}{ margin-top:#{$value}px !important; }
+	}
+	/** Margin Right **/
+	@for $i from 0 through $max-margin{
+	    $value: $i*5;
+	    .margin-right-#{$value}{ margin-right:#{$value}px !important; }
+	}
+	/** Margin Bottom **/
+	@for $i from 0 through $max-margin{
+	    $value: $i*5;
+	    .margin-bottom-#{$value}{ margin-bottom:#{$value}px !important;}
+	}
+	/** Margin Left **/
+	@for $i from 0 through $max-margin{
+	    $value: $i*5;
+	    .margin-left-#{$value}{ margin-left:#{$value}px !important;}
+	}
+	@media (max-width: $tablet-width){
+		.mobile-margin-left-0{
+			margin-left:0px !important;
+		}
+	}
+	
+
+
+// Padding //
+/////////////////////////////////
+/////////////////////////////////
+
+	/** Padding Top **/
+	@for $i from 0 through $max-margin{
+	    $value: $i*5;
+	    .padding-top-#{$value}{ padding-top:#{$value}px !important;}
+	}
+	/** Padding Right **/
+	@for $i from 0 through $max-margin{
+	    $value: $i*5;
+	    .padding-right-#{$value}{ padding-right:#{$value}px !important;}
+	}
+	/** Padding Bottom **/
+	@for $i from 0 through $max-margin{
+	    $value: $i*5;
+	    .padding-bottom-#{$value}{ padding-bottom:#{$value}px !important;}
+	}
+	/** Padding Left **/
+	@for $i from 0 through $max-margin{
+	    $value: $i*5;
+	    .padding-left-#{$value}{ padding-left:#{$value}px !important;}
+	}
+
+// Container Height //
+/////////////////////////////////
+/////////////////////////////////
+	
+	.divider-primary-height{ height: $primary-content-horizontail-divider; }
+	.divider-secondary-height{ height: $secondary-content-horizontail-divider; }
+	.divider-tertiary-height{ height: $tertiary-content-horizontail-divider; }
+	
+	
+	// [Tablet] View When window is smaller than desktop width but above mobile width //
+        @media (min-width: $mobile-width) and (max-width: $desktop-width){
+			.divider-primary-height{ height: $primary-content-horizontail-divider-tablet; }
+			.divider-secondary-height{ height: $secondary-content-horizontail-divider-tablet; }
+			.divider-tertiary-height{ height: $tertiary-content-horizontail-divider-tablet; }	    
+		}
+		
+	// [Mobile] View When window is smaller than mobile width //
+        @media (max-width: $mobile-width){
+			.divider-primary-height{ height: $primary-content-horizontail-divider-mobile; }
+			.divider-secondary-height{ height: $secondary-content-horizontail-divider-mobile; }
+			.divider-tertiary-height{ height: $tertiary-content-horizontail-divider-mobile; }	    
+		}
+
+
+// Container Height //
+/////////////////////////////////
+/////////////////////////////////
+.desktop-hide{
+	display:none;
+}
+
+ @media (max-width: $tablet-width){
+	 	.tablet-hide{
+		 	display:none !important;
+	 	}
+	 	.desktop-hide{
+	 		display: block;
+	 	}
+	 }
+ @media (max-width: $mobile-width){
+	 	.mobile-hide{
+		 	display:none !important;
+	 	}
+	 	.desktop-hide{
+	 		display: block;
+	 	}
+	 }
+
+
+// Container Management //
+/////////////////////////////////
+/////////////////////////////////
+.position-relative{
+	position:relative;
+}
+
+
+
+// Text Manipulations Management //
+/////////////////////////////////
+/////////////////////////////////
+.text-align-left{ 
+	text-align: left;
+}
+.text-align-center{
+	text-align: center;
+}
+.text-align-right{
+	text-align: right;
+}
+
+@media (max-width: $tablet-width){
+ 	
+ 	.tablet-text-align-left{ 
+		text-align: left;
+	}
+	
+	.tablet-text-align-center{
+		text-align: center;
+	}
+	
+	.tablet-text-align-right{
+		text-align: right;
+	} 
+}
+
+@media (max-width: $mobile-width){
+ 	.mobile-text-align-left{ 
+		text-align: left;
+	}
+	
+	.mobile-text-align-center{
+		text-align: center;
+	}
+	
+	.mobile-text-align-right{
+		text-align: right;
+	} 
+}
+
+// Alert //
+/////////////////////////////////
+/////////////////////////////////
+
+.primary-alert{
+	position: relative;
+	@include border-radius(5px);
+	background: #488704;
+	color:#fff;
+	padding:10px;
+	text-align: center;
+
+	.close{
+		position: absolute;
+		right:7px;
+		top:2px;
+
+		&:hover{
+			cursor: pointer;
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+

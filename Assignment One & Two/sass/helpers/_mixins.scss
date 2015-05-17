@@ -1,0 +1,13 @@
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: $size / 16 * 1rem;
+}
+@mixin font-line-height($size) {
+  line-height: $size * 1.6px;
+  line-height: $size / 10 * 1rem;
+}
+
+@mixin header-font-line-height($size) {
+  line-height: $size * 1.6px;
+  line-height: $size / 12 * 1rem;
+}
